@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+<h3>@Saving Tracker</h3>
+<button id="newGoal">+ New goal</button>
+    </div>
+    <div class=" firstBigBox">
+        <div class="box1 totalSavings">
+            <p class="fieldName">Total savings</p>
+            <p class="values">$11,249.00</p>
+        </div>
+        <div class="box1 activeGoals">
+            <p class="fieldName">Active goals</p>
+            <p class="values">7</p>
+        </div>
+        <div class="box1 goalsCompleted">
+            <p class="fieldName"> Goals completed</p>
+            <p class="values">2</p>
+        </div>
+        <div class="monthDeposit">
+            <div class="fieldName" id="depositMonth">Monthly deposit</div>
+            <div class="months">
+                <div class="month"> 
+                    <div class="money">$0</div>
+                    <div class="monthName">Apr</div>
+                </div>
+                <div class="month">
+                    <div class="money">$0</div>
+                    <div class="monthName">May</div>
+                </div>
+                <div class="month">
+                    <div class="monthPersentage" id="jun"></div>
+                    <div class="money">$500</div>
+                    <div class="monthName">Jun</div>
+                </div>
+                <div class="month" >
+                    <div class="monthPersentage" id="july"></div>
+                    <div class="money">$400</div>
+                    <div class="monthName">July</div>
+                </div>
+                <div class="month">
+                    <div class="monthPersentage" id="aug"></div>
+                    <div class="money">$400</div>
+                    <div class="monthName">Aug</div>
+                </div>
+                <div class="month">
+                    <div class="monthPersentage" id="sep"></div>
+                    <div class="money">$1150</div>
+                    <div class="monthName">Sep</div>
+                </div>
+                <div class="month">
+                    <div class="monthPersentage" id="oct"></div>
+                    <div class="money">$1149</div>
+                    <div class="monthName">Oct</div>
+                </div>
+                <div class="month">
+                    <div class="monthPersentage" id="nov"></div>
+                    <div class="money">$1550</div>
+                    <div class="monthName">Nov</div>
+                </div>
+                <div class="month">
+                    <div class="monthPersentage" id="dec"></div>
+                    <div class="money">$2350</div>
+                    <div class="monthName">Dec</div>
+                </div>
+                <div class="month">
+                    <div class="monthPersentage" id="jan"></div>
+                    <div class="money">$1025</div>
+                    <div class="monthName">Jan</div>
+                </div>
+                <div class="month">
+                    <div class="monthPersentage" id="feb"></div>
+                    <div class="money">$1550</div>
+                    <div class="monthName">Feb</div>
+                </div>
+                <div class="month">
+                    <div class="monthPersentage" id="mar"></div>
+                    <div class="money">$1550</div>
+                    <div class="monthName">Mar</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="yourGoals">
+        <h3>Your Goals</h3>
+        <div id="fsbox1">
+        <div class="fsbox2" id="filter">Filters</div>
+        <div class="fsbox2" id="sort" >Sort by</div>
+        </div>
+    </div>
+    <div class="goalsBigBox">
+        <div class="box2 orangeBox MackBook">
+            <div class="activityName">MacBook Pro M4</div>
+            <div class="donePersentage">
+                <div class="persentage">76%</div>
+                <div class="oline">
+                    <div class=" flMacBook" ></div>
+                </div>
+            </div>
+            <div class="valuebox">
+                <div >$1,900 of $2,499</div>
+                <div class="point"></div>
+                <div >Due 1 Jun 2026</div>
+            </div>
+        </div> 
+        <div class="box2 grayBox Mechanical">
+            <div class="completed"> 
+                <div class="activityName"> Mechanical Keyboard</div>
+                <div class="cBox">COMPLETE</div>
+            </div>
+            <div class="donePersentage">
+                <div class="persentage" >100%</div>
+                <div class="greenline "></div>
+            </div>
+            <div class="valuebox">
+                <div class="valuemoney">$350 of $350</div>
+                <div class="point"></div>
+                <div class="valuedate"> Due 15 Mar 2026</div>
+            </div>
+        </div>
+        <div class="box2 grayBox React">
+            <div class="activityName">React Conf Trip</div>
+            <div class="donePersentage">
+                <div class="persentage">72%</div>
+                <div class="gline">
+                    <div class="flReact"></div>
+                </div>
+            </div>
+            <div class="valuebox">
+                <div class="valuemoney">$1,299 of $1,800</div>
+                <div class="point"></div>
+                <div class="valuedate">Due 15 May 2026</div>
+            </div>
+        </div>
+        <div class="box2 grayBox Anniversary">
+            <div class="activityName">Anniversary Trip to Italy</div>
+            <div class="donePersentage">
+                <div class="persentage">60%</div>
+                <div class="gline">
+                    <div class="flAnniversary"></div>
+                </div>
+            </div>
+            <div class="valuebox">
+                <div class="valuemoney">$2,400 of $4,000</div>
+                <div class="point"></div>
+                <div class="valuedate">Due 15 Sep 2026</div>
+            </div>
+        </div>
+        <div class="box2 grayBox Monitor">
+            <div class="activityName">4K Monitor Upgrade</div>
+            <div class="donePersentage">
+                <div class="persentage">75%</div>
+                <div class="gline">
+                    <div class="flMonitor"></div>
+                </div>
+            </div>
+            <div class="valuebox">
+                <div class="valuemoney">$450 of $600</div>
+                <div class="point"></div>
+                <div class="valuedate">Due 30 Apr 2026</div>
+            </div>
+        </div>
+        <div class="box2 orangeBox Emergency">
+            <div class="activityName">Emergency Fund</div>
+            <div class="donePersentage">
+                <div class="persentage">80%</div>
+                <div class="oline">
+                    <div class="flEmergency"></div>
+                </div>
+            </div>
+            <div class="valuebox">
+                <div>$4000 of $5000</div>
+                <div class="point"></div>
+                <div >No deadline</div>
+            </div>
+        </div>
+        <div class="box2 grayBox New">
+            <div class="activityName">New Road Bike</div>
+            <div class="donePersentage">
+                <div class="persentage">57%</div>
+                <div class="gline">
+                    <div class="flNew"></div>
+                </div>
+            </div>
+            <div class="valuebox">
+                <div class="valuemoney">$850 of $1500</div>
+                <div class="point"></div>
+                <div class="valuedate">Due 1 May 2026</div>
+            </div>
+        </div>
+        <div class="box2 grayBox Ergonomic">
+            <div class="activityName">Ergonomic Char</div>
+            <div class="donePersentage">
+                <div class="persentage">0%</div>
+                <div class="gline emptyline"></div>
+            </div>
+            <div class="valuebox">
+                <div class="valuemoney">$0 of $1,200</div>
+                <div class="point"></div>
+                <div class="valuedate">Due 1 Aug 2026</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

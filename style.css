@@ -1,0 +1,448 @@
+/* *{
+    border:1px solid red;
+} */
+body{
+    background-color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#newGoal{
+    background-color: rgba(255, 64, 0, 0.962);
+    color: Black;
+    width:100px;
+    border-radius: 20px;
+    height: 35px;
+    cursor:pointer;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    color:white;
+    padding-left:30px;
+    padding-right:20px;
+    border-bottom: 1px solid rgb(61, 61, 61);
+}
+.firstBigBox{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    margin:auto;
+    gap: 20px;
+    margin:20px;
+    grid-template-areas: 
+    "totalsavings totalsavings totalsavings totalsavings totalsavings totalsavings  activegoals activegoals activegoals goalscompleted goalscompleted goalscompleted"
+    " monthdeposit monthdeposit monthdeposit monthdeposit monthdeposit monthdeposit monthdeposit monthdeposit monthdeposit monthdeposit monthdeposit monthdeposit " ;
+}
+.fieldName{
+    color:White;
+    font-size:17px;
+    justify-content:start;
+    align-content: start;
+    white-space:nowrap;
+
+}
+.box1{
+    border-radius: 10px;
+    padding-left:15px;
+    height:150px;
+    padding-bottom: 25px;
+}
+.values{
+    font-size:55px;
+}
+.totalSavings{
+    grid-area:totalsavings;
+    background-color: rgba(255, 64, 0, 0.962);
+    color: white;
+}
+.activeGoals{
+    grid-area:activegoals;
+    background-color: #1f1f1f;
+    color:  rgba(255, 64, 0, 0.962);
+    border:1px solid rgb(61, 61, 61);
+}
+.goalsCompleted{
+    grid-area:goalscompleted;
+    color:#36a05d;
+    background-color: #1f1f1f;
+    border:1px solid rgb(61, 61, 61);
+}
+.monthDeposit{
+    grid-area:monthdeposit;
+    display:grid;
+    background-color: #1f1f1f;
+    height:200px;
+    border-radius:10px;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 10fr;
+    gap:20px;
+    border:1px solid rgb(61, 61, 61);
+    padding:15px;
+}
+#depositMonth{grid-column:span 6}
+.months{
+    grid-column:span 12;
+    grid-row-start:2;
+    display:grid;
+    height: 150px;
+    gap:20px;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+.month{
+    display:grid;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  1fr;
+    height: 150px;
+}
+.monthPersentage{
+    background-color: rgba(255, 64, 0, 0.962);
+    border-radius: 4px;
+    grid-row-end:-3;
+}
+.money{
+    color:rgb(103, 101, 101);
+    text-align: center;
+    font-size:12px;
+    grid-row-start:-3;
+}
+.monthName{
+    color:white;
+    font-size:12px;
+    text-align:center;
+    grid-row-start:-2;
+}
+#jun{ height:25px;}
+#july{height:20px;}
+#aug{height:20px;}
+#sep{height:57px;}
+#oct{height:57px;}
+#nov{height:76px;}
+#dec{height:117px}
+#jan{height:50px;}
+#feb{height:76px;}
+#mar{height:76px;}
+.yourGoals{
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-left:20px;
+}
+h3{
+    color:white;
+    font-size:35px;
+    white-space:nowrap;
+}
+#fsbox1{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    width:300px;
+    gap:10px;
+}
+.fsbox2{
+    background-color: #1f1f1f;
+    color:white;
+    width:120px;
+    border-radius: 50px;
+    height: 40px;
+    cursor:pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid rgb(61, 61, 61);
+}
+#sort{grid-column-start:2}
+#filter{grid-column-start:1}
+.goalsBigBox{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    gap:20px;
+    height:880px;
+    padding-left:20px;
+    padding-right:20px;
+    grid-template-areas: 
+    "macbook macbook mechanical "
+    "react anniversary mechanical"
+    "monitor emergency emergency"
+    "monitor new ergonomic";
+}
+.box2{
+    border-radius:15px;
+    padding:15px;
+    display:grid;
+    grid-template-rows:1fr 6fr 1fr ;
+}
+.orangeBox{
+    background-color: rgba(255, 64, 0, 0.962);
+    color:white;
+    grid-column:span 2;
+}
+.grayBox{
+    background-color: #1f1f1f;
+    color: rgba(255, 64, 0, 0.962);
+}
+.activityName{
+    color:White;
+    font-size:17px;
+    justify-content:start;
+    align-content: start;
+    white-space:nowrap;
+}
+.cBox{
+    color: #36a05d;
+    font-size:11px;
+    border:1px solid #36a05d;
+    border-radius:10px;
+    display:flex;
+    width:60px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 128, 0, 0.201);
+}
+.completed{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.donePersentage{
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-end;
+}
+.persentage{
+    font-size: 65px;
+    grid-row-start:2;
+    margin-bottom: 20px;
+}
+.valuebox{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    font-size:12px;
+}
+.valuemoney{
+    color:white;
+}
+.valuedate{
+    color:gray
+}
+.point{
+    background-color:rgba(136, 131, 131, 0.475);
+    width:5px;
+    height:5px;
+    border-radius:100%;
+    margin:5px;
+}
+.MackBook {
+  grid-area: macbook;
+}
+.Mechanical {
+    color:#36a05d;
+    grid-area: mechanical;
+}
+.React {
+  grid-area: react;
+}
+.Anniversary {
+  grid-area: anniversary;
+}
+.Monitor {
+    grid-area: monitor;
+}
+
+.Emergency {
+  grid-area: emergency;
+}
+.New {
+  grid-area: new;
+}
+.Ergonomic {
+    color:gray;
+    grid-area: ergonomic;
+}
+.oline{
+    width: 100%;
+    height: 10px;
+    background-color: #2222226d;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.gline{
+    width: 100%;
+    height: 10px;
+   background-color:rgba(79, 69, 69, 0.538);
+   border-radius: 5px;
+    overflow: hidden;
+}
+.greenline{
+    background-color:#36a05d;
+    border-radius:5px;
+    height:10px;
+}
+.emptyline{
+    background-color:rgba(79, 69, 69, 0.538);
+}
+.flMacBook{
+    width:76%;
+    height:10px;
+    background-color: white;
+    border-radius: 5px;
+}
+.flReact{
+    width:72%;
+    height:10px;
+    background-color: rgba(255, 64, 0, 0.962);
+    border-radius: 5px;
+}
+.flAnniversary{
+    width:60%;
+    height:10px;
+    background-color: rgba(255, 64, 0, 0.962);
+
+    border-radius: 5px;
+}
+.flMonitor{
+    width:75%;
+    height:10px;
+    background-color: rgba(255, 64, 0, 0.962);
+    border-radius: 5px;
+}
+.flEmergency{
+    width:80%;
+    height:10px;
+    background-color: white;
+    border-radius: 5px;
+}
+.flNew{
+    width:57%;
+    height:10px;
+    background-color: rgba(255, 64, 0, 0.962);
+    
+    border-radius: 5px;
+}
+@media only screen and (max-width:768px){
+    .firstBigBox{
+        grid-template-columns:1fr  1fr;
+        grid-template-areas: 
+        "totalsavings totalsavings"
+        "activegoals goalscompleted"
+        "monthdeposit monthdeposit";
+    }
+    .box1{
+        height:120px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+    .values{
+        font-size:38px;
+    }
+    .fieldName{
+        font-size: 13px;
+    }
+    .months{
+        display:flex;
+        overflow-x:auto;
+        gap:10px;
+    }
+    .month{
+        min-width:calc(100%/6);
+        flex-shrink:0;
+    }
+    .box2{
+        padding: 12px;
+    }
+    h3{
+        font-size: 28px;
+    }
+    .goalsBigBox{
+        height:auto;
+        grid-template-columns:1fr 1fr ;
+        grid-template-areas: 
+        "macbook macbook "
+        "react anniversary "
+        "mechanical mechanical"
+        "emergency emergency"
+        "new ergonomic"
+        "monitor monitor";
+    }
+
+}
+@media only screen and (max-width:426px){
+    .firstBigBox{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "totalsavings"
+        "activegoals"
+        "goalscompleted"
+        "monthdeposit";
+    }
+    .box1{
+        height: 100px;
+        padding: 10px;
+    }
+    .values{
+        font-size: 30px;
+    }
+    .fieldName{
+        font-size: 12px;
+    }
+    .months{
+        display:flex;
+        overflow-x:auto;
+        gap:10px;
+    }
+
+    .month{
+        min-width:calc(100%/6);
+        flex-shrink:0;
+    }
+    .money,
+    .monthName{
+        font-size: 9px;
+    }
+    h3{
+        font-size: 22px;
+    }
+    .yourGoals{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 15px;
+    }
+    #fsbox1{
+        width:100%;
+        justify-content: space-around;
+        margin:auto;
+        align-items: center;
+    }
+    .month{
+        min-width:calc(100%/6);
+        flex-shrink:0;
+    }
+    .goalsBigBox{
+        height:auto;
+        grid-template-columns:1fr;
+        padding-left:20px;
+        padding-right:20px;
+        grid-template-areas: 
+        "macbook"
+        "react "
+        "anniversary"
+        "mechanical "
+        "emergency "
+        "new"
+        "ergonomic"
+        "monitor";
+    }
+    .persentage{
+        font-size: 50px;
+    }
+    .flMacBook,
+    .flReact,
+    .flAnniversary,
+    .flMonitor,
+    .flEmergency,
+    .flNew{
+        height: 8px;
+    }
+
+}
