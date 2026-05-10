@@ -38,7 +38,6 @@ body{
     justify-content:start;
     align-content: start;
     white-space:nowrap;
-
 }
 .box1{
     border-radius: 1rem;
@@ -89,7 +88,6 @@ body{
     height: 9.4rem;
     gap:1.25rem;
     grid-template-columns:repeat(12, 1fr );
-
 }
 .month{
     display:grid;
@@ -302,7 +300,6 @@ h3{
     width:60%;
     height:0.6rem;
     background-color: rgba(255, 64, 0, 0.962);
-
     border-radius: 0.3rem;
 }
 .flMonitor{
@@ -321,7 +318,6 @@ h3{
     width:57%;
     height:0.6rem;
     background-color: rgba(255, 64, 0, 0.962);
-    
     border-radius: 0.3rem;
 }
 @media only screen and (max-width:768px){
@@ -354,7 +350,6 @@ h3{
         "new ergonomic"
         "monitor monitor";
     }
-
 }
 @media only screen and (max-width:426px){
     html{
@@ -372,7 +367,6 @@ h3{
         display:flex;
         overflow-x:auto;
     }
-
     .month{
         min-width:calc(100%/6);
         flex-shrink:0;
@@ -386,10 +380,6 @@ h3{
         justify-content: space-around;
         margin:auto;
         align-items: center;
-    }
-    .month{
-        min-width:calc(100%/6);
-        flex-shrink:0;
     }
     .goalsBigBox{
         height:auto;
